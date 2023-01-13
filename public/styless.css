@@ -67,7 +67,7 @@ body{
 }
 .nav a{
     display: block;
-    color: brown;
+    color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: lighter;
@@ -75,6 +75,7 @@ body{
 }
 .nav a:hover{
     transform: scale(1.1, 1.1);
+    color: brown;
 }
 
 
