@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background: rgb(191, 231, 245);
     font-family: sans-serif, Arial, Helvetica;
@@ -31,7 +34,21 @@ body{
 .logo{
     width: 120px;  
 }
+.header h1 {
+   font-family: monospace;
+   white-space: nowrap;
+   border-right: 3px solid;
+   width: 7ch;
 
+   animation: typing 3s steps(8) infinite alternate, blink 5s step-start alternate;
+   overflow:hidden;
+}
+@keyframes typing {
+    from {width: 0;}
+}
+@keyframes blink {
+    50% {border-color: transparent}
+}
 
 
 /* Barra de navegación */
@@ -191,6 +208,19 @@ body{
     border-color: transparent;
 }
 
+.notFound{
+    color: red;
+    font-weight: lighter;
+    white-space: nowrap;
+    animation: error 3s steps(34);
+
+}
+
+@keyframes error {
+    0% {opacity: 0% }
+    25% {transform: translateY(-20px); opacity: 100%;}
+    100% {opacity: 100%;}
+}
 
 
 
